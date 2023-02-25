@@ -8,5 +8,5 @@ class MyRequestHandler(BaseHTTPRequestHandler):
         f=open("hello.html","rb")
         self.wfile.write(f.read())
 
-httpd = HTTPServer(('localhost', 8000), MyRequestHandler)
+httpd = HTTPServer(('localhost', 8080), MyRequestHandler)
 httpd.serve_forever()
